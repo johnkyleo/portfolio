@@ -1,8 +1,11 @@
-import { FaHtml5,FaJs,FaReact,FaNodeJs,FaGitAlt   } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa6";
+import { FaCss3Alt,FaHtml5,FaReact,FaNodeJs,FaGitAlt} from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiExpress,SiMongodb,SiMongoose } from "react-icons/si";
+import { SiExpress,SiMongodb,SiMongoose,SiJavascript } from "react-icons/si";
 import {motion} from 'framer-motion'
+
+
+
+
 
 
 function Skills() {
@@ -16,7 +19,7 @@ function Skills() {
     className="flex justify-evenly self-center flex-wrap gap-y-10 gap-6">
         <div className="flex flex-wrap uppercase text-[25px] font-bold"><FaHtml5 size="35px"/>HTML</div>
         <div className="flex flex-wrap uppercase text-[25px] font-bold"><FaCss3Alt size="35px"/>CSS</div>
-        <div className="flex flex-wrap uppercase text-[25px] font-bold"><FaJs size="35px"/>JavaScript</div>
+        <div className="flex flex-wrap uppercase text-[25px] font-bold"><SiJavascript  size="35px"/>JavaScript</div>
         <div className="flex flex-wrap uppercase text-[25px] font-bold"><FaReact size="35px"/>React</div>
         <div className="flex flex-wrap uppercase text-[25px] font-bold mb-10"><RiTailwindCssFill size="35px"/>Tailwind CSS</div>
     </motion.div>
