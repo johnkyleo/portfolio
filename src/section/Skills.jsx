@@ -4,10 +4,6 @@ import { SiExpress,SiMongodb,SiMongoose,SiJavascript } from "react-icons/si";
 import {motion} from 'framer-motion'
 
 
-
-
-
-
 function Skills() {
  
   return (
