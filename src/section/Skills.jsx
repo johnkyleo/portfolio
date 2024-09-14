@@ -1,7 +1,8 @@
 import { FaCss3Alt,FaHtml5,FaReact,FaNodeJs,FaGitAlt} from "react-icons/fa6";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { RiTailwindCssFill,RiNextjsLine } from "react-icons/ri";
 import { SiExpress,SiMongodb,SiMongoose,SiJavascript } from "react-icons/si";
 import {motion} from 'framer-motion'
+
 
 
 function Skills() {
@@ -17,11 +18,13 @@ function Skills() {
         <div className="flex flex-wrap uppercase text-[25px] font-bold"><FaCss3Alt size="35px"/>CSS</div>
         <div className="flex flex-wrap uppercase text-[25px] font-bold"><SiJavascript  size="35px"/>JavaScript</div>
         <div className="flex flex-wrap uppercase text-[25px] font-bold"><FaReact size="35px"/>React</div>
+        <div className="flex flex-wrap uppercase text-[25px] font-bold"><RiNextjsLine size="35px"/>NextJS</div>
         <div className="flex flex-wrap uppercase text-[25px] font-bold mb-10"><RiTailwindCssFill size="35px"/>Tailwind CSS</div>
+
     </motion.div>
     <h2 className="uppercase text-[32px] font-bold">BACKEND</h2>
     <motion.div initial={{ x: '500px', opacity: 0, scale: .8 }} whileInView={{ x: 0, opacity:1, scale: 1 }} transition={{ duration: 1, ease: 'easeInOut' }}  viewport={{once: true}}
-    className="flex justify-evenly self-center flex-wrap gap-y-10 gap-6">
+    className="flex justify-evenly self-center flex-wrap gap-y-10 gap-6 px-3">
         <div className="flex flex-wrap uppercase text-[25px] font-bold"><FaNodeJs size="35px"/>NodeJS</div>
         <div className="flex flex-wrap uppercase text-[25px] font-bold"><SiExpress size="35px"/>ExpressJS</div>
         <div className="flex flex-wrap uppercase text-[25px] font-bold"><SiMongodb size="35px"/>MongoDB</div>
