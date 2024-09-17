@@ -8,7 +8,7 @@
 
     const Project = () => {
     return (
-        <section id="projects" className="flex flex-col text-center">
+        <section id="project" className="flex flex-col text-center">
         <h1 className="uppercase text-[40px] text-blue-900">Projects</h1>
         <hr className="w-[200px] h-px mx-auto border-black"/>
         <div className="flex flex-col items-center gap-[30px] lg:flex-row lg:p-20">

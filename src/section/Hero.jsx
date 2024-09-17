@@ -11,7 +11,7 @@ function Hero() {
  
   return (
     <motion.section initial={{ opacity: 0, scale: .8 }} whileInView={{ opacity:1, scale: 1 }} transition={{ duration: .8, ease: 'easeInOut' }}  viewport={{once: true}}
-    id="hero" className="flex flex-col justify-center gap-5 text-center h-[100dvh] min-h-[800px] md:flex-row-reverse md:items-center md:justify-evenly">
+    id="home" className="flex flex-col justify-center gap-5 text-center h-[100dvh] min-h-[800px] md:flex-row-reverse md:items-center md:justify-evenly">
       <div className="flex justify-center">
         <img
          alt=""
