@@ -9,7 +9,7 @@ function Skills() {
  
   return (
     <section className="flex flex-col text-center h-[100dvh] min-h-[730px] py-3" id="skills">
-      <h1 className="uppercase text-[40px] lg:mt-24 text-blue-900">Skills</h1>
+      <h1 className="uppercase text-[40px] lg:mt-24 text-blue-900 mt-10">Skills</h1>
       <hr className="w-[200px] h-px mx-auto border-black mb-10"/>
     <h2 className="uppercase text-[32px] font-bold">FRONTEND</h2>
     <motion.div initial={{ opacity: 0, scale: .2 }} whileInView={{ x: 0, opacity:1, scale: 1 }} transition={{ duration: 1, ease: 'easeInOut' }}  viewport={{once: true}}

@@ -20,6 +20,7 @@ const Navbar = () => {
             <Navbaritem label='Home' id='home'/>
             <Navbaritem label='Skills' id='skills'/>
             <Navbaritem label='Projects' id='project'/>
+            <Navbaritem label='Contact' id='contact'/>
           
             </div>
             {/* Small Screen */}

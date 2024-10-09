@@ -9,8 +9,8 @@
 
     const Project = () => {
     return (
-        <section id="project" className="flex flex-col text-center">
-        <h1 className="uppercase text-[40px] text-blue-900">Projects</h1>
+        <section id="project" className="flex flex-col text-center h-fit">
+        <h1 className="uppercase text-[40px] text-blue-900 lg:mt-24 mt-10">Projects</h1>
         <hr className="w-[200px] h-px mx-auto border-black"/>
         <div className="flex flex-wrap justify-center lg:p-20">
                

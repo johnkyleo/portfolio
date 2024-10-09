@@ -1,3 +1,4 @@
+import Contact from "./section/Contact";
 import Hero from "./section/Hero";
 import Navbar from "./section/Navbar";
 import Project from "./section/Project";
@@ -10,6 +11,7 @@ export default function App() {
    <Hero/>
    <Skills/>
    <Project/>
+   <Contact/>
    </>
   )
 }
