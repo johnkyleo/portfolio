@@ -3,7 +3,7 @@ import linkedin from '../assets/linkedin-light.svg';
 import me from '../assets/me.jpeg'
 import CV from '../assets/Obusan_John_Kyle_CV.pdf';
 import {motion} from 'framer-motion'
-import { HiDownload } from "react-icons/hi";
+
 
 
 
@@ -50,7 +50,7 @@ function Hero() {
        
         <a href={CV} download className='w-fit self-center'>
           <button className="text-xl font-[bold] shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-[20px] border-[none];
-  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out hover:scale-105 font-semibold p-3 flex items-center mr-4">Resume <HiDownload/></button>
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out hover:scale-105 py-3 px-10 flex items-center font-bold">Download CV</button>
         </a>
       </div>
     </motion.section>
