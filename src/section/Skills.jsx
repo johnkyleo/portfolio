@@ -1,7 +1,6 @@
-import { FaReact } from "react-icons/fa6";
+import { FaReact,FaNodeJs,FaFigma } from "react-icons/fa6";
 import { RiNextjsLine, RiTailwindCssFill,RiJavascriptLine } from "react-icons/ri";
 import { BsFiletypeCss, BsFiletypeHtml } from "react-icons/bs";
-import { FaNodeJs,FaFigma } from "react-icons/fa";
 import { SiExpress,SiMongodb,SiMongoose } from "react-icons/si";
 import { IoIosGitMerge } from "react-icons/io";
 
