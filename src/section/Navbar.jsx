@@ -14,9 +14,9 @@ const Navbar = () => {
 
   return (
     <nav className='w-full z-40'>
-        <div className='px-4 md:px-16 py-4 flex flex-row justify-end transition duration-500 bg-blue-900 fixed w-full'>          
+        <div className='px-4 lg:px-16 py-4 flex flex-row justify-end transition duration-500 bg-blue-600 fixed w-full'>          
             {/* Large Screen */}
-            <div className='flex-row  gap-7 hidden lg:flex uppercase font-semibold'>
+            <div className='flex-row  gap-7 hidden lg:flex font-medium'>
             <Navbaritem label='Home' id='home'/>
             <Navbaritem label='Skills' id='skills'/>
             <Navbaritem label='Projects' id='project'/>
@@ -24,7 +24,7 @@ const Navbar = () => {
           
             </div>
             {/* Small Screen */}
-            <div className='lg:hidden cursor-pointer relative uppercase font-semibold'>               
+            <div className='lg:hidden'>               
                 <GiHamburgerMenu className='text-white transition' onClick={toggleMenu}/>
                 <Mobilemenu visible={showMobileMenu}/>
             </div>

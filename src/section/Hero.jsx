@@ -20,7 +20,7 @@ function Hero() {
         /> 
       </div>
       <div className="flex flex-col gap-5">
-        <h1 className='uppercase text-[40px] text-blue-900'>
+        <h1 className='uppercase text-[40px]'>
           John Kyle
           <br/>
           Obusan
@@ -32,26 +32,27 @@ function Hero() {
             <img src={github} alt="Github icon" className='w-[30px] hover:scale-125' />
           </a>
           <a href="https://www.linkedin.com/in/johnkyleo" target="_blank" className='m-0 w-fit self-center'>
-            <img src={linkedin} alt="Linkedin icon" className='w-[30px] hover:scale-125' />
+            <img src={linkedin} alt="Linkedin icon" className='w-[30px] hover:scale-125 ' />
           </a>
         </span>
        
         <div className='flex justify-center'>
-        <p className="max-w-[24ch] font-normal">
+        <p className="max-w-[300px] text-sm">
           With a passion for developing modern React web apps for commercial
           businesses.
         </p>
         </div>
-        <div>
-          <p className='font-bold'>Contact Me</p>
-          <p className='hover:scale-125'>johnkyleobusan@gmail.com</p>
-          <p>+639267410722</p>
-        </div>
        
+        <div className='flex gap-4'>
         <a href={CV} download className='w-fit self-center'>
-          <button className="text-xl font-[bold] shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-[20px] border-[none];
-  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out hover:scale-105 py-3 px-10 flex items-center font-bold">Download CV</button>
+          <button className="shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-[15px]
+             transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out hover:scale-105 py-3 px-10 flex items-center border-blue-600 border-2 text-black">Download CV</button>
         </a>
+        <a href={CV} download className='w-fit self-center'>
+          <button className="shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-[15px]
+             transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out hover:scale-105 py-3 px-10 flex items-center bg-blue-600 text-white">Hire Me</button>
+        </a>
+        </div>
       </div>
     </motion.section>
   );

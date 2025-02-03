@@ -1,39 +1,91 @@
-import { FaCss3Alt,FaHtml5,FaReact,FaNodeJs,FaGitAlt} from "react-icons/fa6";
-import { RiTailwindCssFill,RiNextjsLine } from "react-icons/ri";
-import { SiExpress,SiMongodb,SiMongoose,SiJavascript } from "react-icons/si";
-import {motion} from 'framer-motion'
+import { FaReact } from "react-icons/fa6";
+import { RiNextjsLine, RiTailwindCssFill,RiJavascriptLine } from "react-icons/ri";
+import { BsFiletypeCss, BsFiletypeHtml } from "react-icons/bs";
+import { FaNodeJs,FaFigma } from "react-icons/fa";
+import { SiExpress,SiMongodb,SiMongoose } from "react-icons/si";
+import { IoIosGitMerge } from "react-icons/io";
 
 
 
 function Skills() {
- 
   return (
-    <section className="flex flex-col text-center h-[100dvh] min-h-[730px] py-3" id="skills">
-      <h1 className="uppercase text-[40px] lg:mt-24 text-blue-900 mt-10">Skills</h1>
-      <hr className="w-[200px] h-px mx-auto border-black mb-10"/>
-    <h2 className="uppercase text-[32px] font-bold">FRONTEND</h2>
-    <motion.div initial={{ opacity: 0, scale: .2 }} whileInView={{ x: 0, opacity:1, scale: 1 }} transition={{ duration: 1, ease: 'easeInOut' }}  viewport={{once: true}}
-    className="flex justify-evenly self-center flex-wrap gap-y-10 gap-6">
-        <div className="flex flex-wrap uppercase text-[25px] font-bold"><FaHtml5 size="35px"/>HTML</div>
-        <div className="flex flex-wrap uppercase text-[25px] font-bold"><FaCss3Alt size="35px"/>CSS</div>
-        <div className="flex flex-wrap uppercase text-[25px] font-bold"><SiJavascript  size="35px"/>JavaScript</div>
-        <div className="flex flex-wrap uppercase text-[25px] font-bold"><FaReact size="35px"/>React</div>
-        <div className="flex flex-wrap uppercase text-[25px] font-bold"><RiNextjsLine size="35px"/>NextJS</div>
-        <div className="flex flex-wrap uppercase text-[25px] font-bold mb-10"><RiTailwindCssFill size="35px"/>Tailwind CSS</div>
-
-    </motion.div>
-    <h2 className="uppercase text-[32px] font-bold">BACKEND</h2>
-    <motion.div initial={{ opacity: 0, scale: .2 }} whileInView={{ x: 0, opacity:1, scale: 1 }} transition={{ duration: 1, ease: 'easeInOut' }}  viewport={{once: true}}
-    className="flex justify-evenly self-center flex-wrap gap-y-10 gap-6 px-3">
-        <div className="flex flex-wrap uppercase text-[25px] font-bold"><FaNodeJs size="35px"/>NodeJS</div>
-        <div className="flex flex-wrap uppercase text-[25px] font-bold"><SiExpress size="35px"/>ExpressJS</div>
-        <div className="flex flex-wrap uppercase text-[25px] font-bold"><SiMongodb size="35px"/>MongoDB</div>
-        <div className="flex flex-wrap uppercase text-[25px] font-bold mb-10"><SiMongoose size="35px"/>Mongoose</div>
-    </motion.div>
-    <h2 className="uppercase text-[32px] font-bold">OTHERS</h2>
-    <motion.div className="flex justify-evenly self-center flex-wrap gap-y-10 gap-6">
-    <div className="flex flex-wrap uppercase text-[25px] font-bold"><FaGitAlt size="35px"/>GIT</div>
-    </motion.div>
+    <section
+      className="flex flex-col text-center h-[100dvh] min-h-[730px] py-3 items-center"
+      id="skills"
+    >
+      <div className="space-y-2">
+        <h1 className="uppercase text-[40px] text-blue-600 lg:mt-24 mt-10">
+          Skills
+        </h1>
+        <hr className="w-[200px] h-px mx-auto border-black" />
+      </div>
+      <div className="container px-4 md:px-6">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 py-12 sm:grid-cols-2 md:grid-cols-3 lg:gap-12">
+          <div className="space-y-4">
+            <h3 className="text-xl font-bold">Frontend</h3>
+            <ul className="grid gap-3 place-content-center">
+              <li className="flex items-center gap-4">
+                <FaReact className="w-8 h-8" />
+                <span>React</span>
+              </li>
+              <li className="flex items-center gap-4">
+                <RiNextjsLine className="w-8 h-8" />
+                <span>Next.js</span>
+              </li>
+              <li className="flex items-center gap-4">
+                <RiTailwindCssFill className="w-8 h-8" />
+                <span>Tailwind CSS</span>
+              </li>
+              <li className="flex items-center gap-4">
+                <BsFiletypeHtml className="w-8 h-8" />
+                <span>HTML</span>
+              </li>
+              <li className="flex items-center gap-4">
+                <BsFiletypeCss className="w-8 h-8" />
+                <span>CSS</span>
+              </li>
+              <li className="flex items-center gap-4">
+                <RiJavascriptLine className="w-8 h-8" />
+                <span>Javascript</span>
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-4 ">
+            <h3 className="text-xl font-bold">Backend</h3>
+            <ul className="grid gap-3 place-content-center">
+              <li className="flex items-center gap-4">
+                <FaNodeJs className="w-8 h-8" />
+                <span>Node.js</span>
+              </li>
+              <li className="flex items-center gap-4">
+              <SiExpress  className="w-8 h-8" />
+                <span>Express.js</span>
+              </li>
+              <li className="flex items-center gap-4">
+              <SiMongodb  className="w-8 h-8" />
+                <span>MongoDB</span>
+              </li>
+              <li className="flex items-center gap-4">
+              <SiMongoose  className="w-8 h-8" />
+                <span>Mongoose</span>
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-4">
+            <h3 className="text-xl font-bold">Other</h3>
+            <ul className="grid gap-3 place-content-center">
+              <li className="flex items-center gap-4">
+              <IoIosGitMerge className="w-8 h-8" />
+                <span>Git</span>
+              </li>
+              <li className="flex items-center gap-4">
+              <FaFigma  className="w-8 h-8" />
+                <span>Figma</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

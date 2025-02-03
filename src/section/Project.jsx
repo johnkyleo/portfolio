@@ -5,6 +5,11 @@
     import quiztime from '../assets/quiztime.jpg'
     import deadpool from '../assets/deadpool.jpg'
     import {motion} from 'framer-motion'
+    import { VscGithubAlt } from "react-icons/vsc";
+
+    import { CiPlay1 } from "react-icons/ci";
+
+
     
 
     const Project = () => {
@@ -14,8 +19,8 @@
         <hr className="w-[200px] h-px mx-auto border-black"/>
         <div className="flex flex-wrap justify-center lg:p-20">
                
-            <motion.a initial={{opacity:0}} whileInView={{opacity:1}} viewport={{margin: '-150px',once: true }} transition={{ duration: 1.5, ease: 'easeInOut' }} 
-            className="rounded overflow-hidden shadow-lg m-6 hover:scale-110 max-w-[300px]" href='https://github.com/johnkyleo/Pixelz' target='_blank'>
+            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{margin: '-150px',once: true }} transition={{ duration: 1.5, ease: 'easeInOut' }} 
+            className="rounded overflow-hidden shadow-lg m-6 sm:max-w-[300px] md:max-w-[450px]">
                 <img className="w-full" src={pixelz} alt="Pixelz"/>
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">Pixelz</div>
@@ -23,14 +28,24 @@
                     Full Stack Ecommerce eCommerce with Admin website built using Tailwind CSS and React that feature various products</p>
                 </div>
                 <div className="px-6 pt-4 pb-2">
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">React</span>
+                    <span className=" bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">React</span>
                     <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Tailwind CSS</span>
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">NodeJS</span>
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">ExpressJS</span>
+                    <span className=" bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">NodeJS</span>
+                    <span className=" bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">ExpressJS</span>
                 </div>
-            </motion.a>
-            <motion.a initial={{opacity:0}} whileInView={{opacity:1}} viewport={{margin: '-150px',once: true }} transition={{ duration: 1.5, ease: 'easeInOut' }} 
-            className="rounded overflow-hidden shadow-lg m-6 hover:scale-110 max-w-[300px]" href='https://github.com/johnkyleo/DNW-Frontend' target='_blank'>
+                <div className='flex gap-4 place-content-center py-4'>              
+                    <a href="https://github.com/johnkyleo/Pixelz" target="_blank" className='bg-black px-5 py-2 rounded-lg text-white  items-center gap-4 flex w-fit'>
+                        <button>Github</button>
+                        <VscGithubAlt/>                   
+                    </a>         
+                    <a href="https://ecommerce-mern-ebon.vercel.app/" target="_blank" className='bg-black px-5 py-2 rounded-lg text-white  items-center gap-4 flex w-fit'>
+                        <button>Visit</button>
+                        <CiPlay1/>                   
+                    </a>           
+                </div>
+            </motion.div>
+            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{margin: '-150px',once: true }} transition={{ duration: 1.5, ease: 'easeInOut' }} 
+            className="rounded overflow-hidden shadow-lg m-6 sm:max-w-[300px] md:max-w-[450px]">
                 <img className="w-full" src={deadpool} alt="Crypto"/>
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">Deadpool and Wolverine</div>
@@ -39,12 +54,22 @@
                     </p>
                 </div>
                 <div className="px-6 pt-4 pb-2">
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">NextJS</span>
+                    <span className=" bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">NextJS</span>
                     <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Tailwind CSS</span>                  
                 </div>
-            </motion.a>  
-            <motion.a initial={{opacity:0}} whileInView={{opacity:1}} viewport={{margin: '-150px',once: true }} transition={{ duration: 1.5, ease: 'easeInOut' }} 
-            className="rounded overflow-hidden shadow-lg m-6 hover:scale-110 max-w-[300px]" href='https://github.com/johnkyleo/crypto-api' target='_blank'>
+                <div className='flex gap-4 place-content-center py-4'>              
+                    <a href="https://github.com/johnkyleo/DNW-Frontend" target="_blank" className='bg-black px-5 py-2 rounded-lg text-white  items-center gap-4 flex w-fit'>
+                        <button>Github</button>
+                        <VscGithubAlt/>                   
+                    </a>         
+                    <a href="#" target="_blank" className='bg-black px-5 py-2 rounded-lg text-white  items-center gap-4 flex w-fit'>
+                        <button>Visit</button>
+                        <CiPlay1/>                   
+                    </a>           
+                </div>
+            </motion.div>  
+            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{margin: '-150px',once: true }} transition={{ duration: 1.5, ease: 'easeInOut' }} 
+            className="rounded overflow-hidden shadow-lg m-6 sm:max-w-[300px] md:max-w-[450px]">
                 <img className="w-full" src={crypto} alt="Crypto"/>
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">Crypto Web</div>
@@ -53,13 +78,23 @@
                     </p>
                 </div>
                 <div className="px-6 pt-4 pb-2">
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">React</span>
+                    <span className=" bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">React</span>
                     <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Tailwind CSS</span>
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">API</span>
+                    <span className=" bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">API</span>
                 </div>
-            </motion.a>  
-            <motion.a initial={{opacity:0}} whileInView={{opacity:1}} viewport={{margin: '-150px',once: true }} transition={{ duration: 1.5, ease: 'easeInOut' }} 
-            className="rounded overflow-hidden shadow-lg m-6 hover:scale-110 max-w-[300px]" href='https://github.com/johnkyleo/weather-app' target='_blank'>
+                <div className='flex gap-4 place-content-center py-4'>              
+                    <a href="https://github.com/johnkyleo/crypto-api" target="_blank" className='bg-black px-5 py-2 rounded-lg text-white  items-center gap-4 flex w-fit'>
+                        <button>Github</button>
+                        <VscGithubAlt/>                   
+                    </a>         
+                    <a href="https://crypto-api-sepia-seven.vercel.app/" target="_blank" className='bg-black px-5 py-2 rounded-lg text-white  items-center gap-4 flex w-fit'>
+                        <button>Visit</button>
+                        <CiPlay1/>                   
+                    </a>           
+                </div>
+            </motion.div>  
+            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{margin: '-150px',once: true }} transition={{ duration: 1.5, ease: 'easeInOut' }} 
+            className="rounded overflow-hidden shadow-lg m-6 sm:max-w-[300px] md:max-w-[450px]">
                 <img className="w-full" src={weatherapp} alt="Weather App"/>
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">Weather App</div>
@@ -69,13 +104,23 @@
                     </p>
                 </div>
                 <div className="px-6 pt-4 pb-2">
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">React</span>
+                    <span className=" bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">React</span>
                     <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Tailwind CSS</span>
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">API</span>
+                    <span className=" bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">API</span>
                 </div>
-            </motion.a>
-            <motion.a initial={{opacity:0}} whileInView={{opacity:1}} viewport={{margin: '-150px',once: true }} transition={{ duration: 1.5, ease: 'easeInOut' }} 
-             className="rounded overflow-hidden shadow-lg m-6 hover:scale-110 max-w-[300px]" href='https://github.com/johnkyleo/JS-QUIZ' target='_blank'>
+                <div className='flex gap-4 place-content-center py-4'>              
+                    <a href="https://github.com/johnkyleo/weather-app" target="_blank" className='bg-black px-5 py-2 rounded-lg text-white  items-center gap-4 flex w-fit'>
+                        <button>Github</button>
+                        <VscGithubAlt/>                   
+                    </a>         
+                    <a href="https://weather-app-ebon.vercel.app/" target="_blank" className='bg-black px-5 py-2 rounded-lg text-white  items-center gap-4 flex w-fit'>
+                        <button>Visit</button>
+                        <CiPlay1/>                   
+                    </a>           
+                </div>
+            </motion.div>
+            <motion.div initial={{opacity:0}} whileInView={{opacity:1}} viewport={{margin: '-150px',once: true }} transition={{ duration: 1.5, ease: 'easeInOut' }} 
+             className="rounded overflow-hidden shadow-lg m-6 sm:max-w-[300px] md:max-w-[450px]">
                 <img className="w-full" src={quiztime} alt="Quiz Time"/>
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">Quiz Time</div>
@@ -84,11 +129,21 @@
                     </p>
                 </div>
                 <div className="px-6 pt-4 pb-2">
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">HTML</span>
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">CSS</span>
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">JavaScript</span>
+                    <span className=" bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">HTML</span>
+                    <span className=" bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">CSS</span>
+                    <span className=" bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Javascript</span>
                 </div>
-            </motion.a>  
+                <div className='flex gap-4 place-content-center py-4'>              
+                    <a href="https://github.com/johnkyleo/JS-QUIZ" target="_blank" className='bg-black px-5 py-2 rounded-lg text-white  items-center gap-4 flex w-fit'>
+                        <button>Github</button>
+                        <VscGithubAlt/>                   
+                    </a>         
+                    <a href="https://jsquiztime.netlify.app/" target="_blank" className='bg-black px-5 py-2 rounded-lg text-white  items-center gap-4 flex w-fit'>
+                        <button>Visit</button>
+                        <CiPlay1/>                   
+                    </a>           
+                </div>
+            </motion.div>  
 
         </div>
     </section>
