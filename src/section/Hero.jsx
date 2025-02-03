@@ -43,12 +43,12 @@ function Hero() {
         </p>
         </div>
        
-        <div className='flex gap-4'>
+        <div className='flex gap-4 place-content-center'>
         <a href={CV} download className='w-fit self-center'>
           <button className="shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-[15px]
              transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out hover:scale-105 py-3 px-10 flex items-center border-blue-600 border-2 text-black">Download CV</button>
         </a>
-        <a href={CV} download className='w-fit self-center'>
+        <a href="#contact" className='w-fit self-center'>
           <button className="shadow-[0_4px_4px_rgba(0,0,0,0.25)] rounded-[15px]
              transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out hover:scale-105 py-3 px-10 flex items-center bg-blue-600 text-white">Hire Me</button>
         </a>
