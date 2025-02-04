@@ -49,7 +49,7 @@ function Contact() {
               <input type="text" name="name" className="block p-2.5 w-full text-sm bg-gray-100 rounded-lg shadow-sm border font-extrabold" placeholder="Name" required/>           
               <input type="email" name="email" className="block p-2.5 w-full text-sm bg-gray-100 rounded-lg shadow-sm border font-extrabold" placeholder="Email" required/>           
               <textarea name="message" rows="6" className="block p-2.5 w-full text-sm bg-gray-100 rounded-lg shadow-sm border font-extrabold" placeholder="Leave a message..."></textarea>    
-          <button type="submit" className="py-3 px-5 text-sm font-semibold text-center rounded-md bg-blue-600 text-white">Send message</button>
+          <button type="submit" className="py-3 px-5 text-sm font-semibold text-center rounded-md bg-blue-600 text-white hover:bg-white hover:text-black hover:border-2 hover:border-blue-600">Send message</button>
       </form>
       </div>
     </section>
