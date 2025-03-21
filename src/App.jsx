@@ -1,17 +1,24 @@
-import Contact from "./section/Contact";
-import Hero from "./section/Hero";
-import Navbar from "./section/Navbar";
-import Project from "./section/Project";
-import Skills from "./section/Skills";
 
-export default function App() {
+import About from "./components/About"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
+import Hero from "./components/Hero"
+import Projects from "./components/Projects"
+import Skills from "./components/Skills"
+
+function App() {
+ 
+
   return (
-   <>
-   <Navbar/>
-   <Hero/>
-   <Skills/>
-   <Project/>
-   <Contact/>
-   </>
+    <>
+    <Hero />
+    <About/>
+    <Skills/>
+    <Projects/>
+    <Contact/>
+    <Footer/>
+    </>
   )
 }
+
+export default App
