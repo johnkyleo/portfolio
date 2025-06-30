@@ -27,7 +27,7 @@ export default function Projects() {
               image={deadpool}
               tags={["NextJS", "Tailwind Css"]}
               githubUrl="https://github.com/johnkyleo/DNW-Frontend"
-              liveUrl="#"
+              liveUrl="https://dnw-frontend.vercel.app/"
             />
             <Projectcard
               title="Crypto Currency Tracker"
