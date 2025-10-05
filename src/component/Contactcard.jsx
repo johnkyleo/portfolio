@@ -1,7 +1,7 @@
-import React from "react";
-import toast, { Toaster } from 'react-hot-toast';
-
-function Contact() {
+import toast, { Toaster } from "react-hot-toast";
+import { ArrowUpRight } from "lucide-react";
+import { useState } from "react";
+const Contactcard = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -22,20 +22,56 @@ function Contact() {
 
     if (res.success) {
       console.log("Success", res);
-      toast.success('Message Sent')
+      toast.success("Message Sent");
       event.target.reset();
     }
   };
 
+  const [contactpage, setContactpage] = useState(false);
+  const onClick = () => {
+    setContactpage((prev) => !prev);
+  };
+
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 bg-zinc-900 text-white min-h-screen">
+    <div
+      id="contact"
+      className="md:col-span-6 lg:col-span-12 md:row-span-1 bg-foreground text-background border border-foreground rounded-lg p-8 flex flex-col md:flex-row items-center justify-between gap-4 hover:scale-[1.01] transition-transform"
+    >
+      <div className={`${contactpage ? "hidden" : "block"}`}>
+        <h2 className="text-2xl md:text-3xl font-bold mb-2">
+          Let's work together
+        </h2>
+        <p className="text-background/80">
+          Have a project in mind? Let's make it happen.
+        </p>
+      </div>
+      <button
+        onClick={onClick}
+        className={`bg-background text-foreground px-6 py-3 rounded-md hover:bg-background/90 transition flex items-center text-md font-medium ${
+          contactpage ? "hidden" : "block"
+        }`}
+      >
+        Contact me
+        <ArrowUpRight className="ml-2 h-4 w-4" />
+      </button>
+
+      <section
+        className={`py-20 px-4 sm:px-6 text-white mx-auto ${
+          contactpage ? "block" : "hidden"
+        }`}
+      >
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-16 text-center">Get In Touch</h2>    
-          <form className="space-y-6" onSubmit={onSubmit}>  
-            <Toaster/>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-16 text-center">
+            Get In Touch
+          </h2>
+          <form className="space-y-6" onSubmit={onSubmit}>
+            <Toaster />
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-300 mb-2"
+                >
                   Name
                 </label>
                 <input
@@ -48,7 +84,10 @@ function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-300 mb-2"
+                >
                   Email
                 </label>
                 <input
@@ -56,13 +95,16 @@ function Contact() {
                   id="email"
                   className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/30 text-white"
                   placeholder="your.email@example.com"
-                   name="email"
+                  name="email"
                   required
                 />
               </div>
             </div>
             <div>
-              <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
+              <label
+                htmlFor="subject"
+                className="block text-sm font-medium text-gray-300 mb-2"
+              >
                 Subject
               </label>
               <input
@@ -70,11 +112,14 @@ function Contact() {
                 id="subject"
                 className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/30 text-white"
                 placeholder="Subject"
-                 name="subject"
+                name="subject"
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-gray-300 mb-2"
+              >
                 Message
               </label>
               <textarea
@@ -82,7 +127,7 @@ function Contact() {
                 rows={6}
                 className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/30 text-white resize-none"
                 placeholder="Your message..."
-                 name="message"
+                name="message"
                 required
               ></textarea>
             </div>
@@ -95,8 +140,8 @@ function Contact() {
           </form>
         </div>
       </section>
-    
+    </div>
   );
-}
+};
 
-export default Contact;
+export default Contactcard;
