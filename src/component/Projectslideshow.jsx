@@ -11,7 +11,7 @@ const projects = [
     description: "Full Stack Ecommerce eCommerce with Admin dashboard website built using Tailwind CSS and React that feature various products",
     icon: ecommerce,
     tags: ["React.js", "Tailwind CSS", "Node.js", "MongoDB"],
-    link: "#",
+    link: "https://ecommerce-mern-ebon.vercel.app/",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const projects = [
     description: "A Frontend website based on the movie Deadpool and Wolverine.",
     icon: deadpool,
     tags: ["NextJS", "Tailwind Css"],
-    link: "#",
+    link: "https://dnw-frontend.vercel.app/",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const projects = [
     description: "A simple website using React that displays the price, market cap and change of a cryptocurrency, such as Bitcoin using api coincap",
     icon: crypto,
     tags: ["React", "Tailwind"],
-    link: "#",
+    link: "https://crypto-api-sepia-seven.vercel.app/",
   },
   
 ]

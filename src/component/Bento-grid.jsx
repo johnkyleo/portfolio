@@ -1,7 +1,7 @@
 import Hero from "./Hero";
 import Sociallinks from "./Sociallinks";
 import Skills from "./Skills";
-import Emailcard from "./EmailCard";
+import Emailcard from "./Emailcard";
 import Contactcard from "./Contactcard";
 
 import About from "./About";
