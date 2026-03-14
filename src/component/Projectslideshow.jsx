@@ -59,7 +59,7 @@ const Projectslideshow = () => {
   const currentProjects = projects.slice(currentIndex, currentIndex + slidesToShow)
 
   return (
-    <div className="relative bg-white border border-gray-200 rounded-lg p-6 md:p-8 hover:border-blue-500 transition-colors min-h-[400px] flex flex-col">
+    <div className="relative bg-white border rounded-lg p-6 md:p-8 transition-colors min-h-[400px] flex flex-col hover:scale-[1.02]">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-2xl font-bold text-black">Projects</h2>
         <div className="flex items-center gap-2">
@@ -97,7 +97,7 @@ const Projectslideshow = () => {
                   className="flex-shrink-0 p-2 rounded-lg hover:bg-gray-100 transition-colors group"
                   aria-label="View project"
                 >
-                  <ArrowUpRight className="h-5 w-5 text-gray-600 group-hover:text-blue-500 transition-colors" />
+                  <ArrowUpRight className="h-5 w-5 text-gray-600 group-hover:text-black transition-colors" />
                 </a>
               </div>
 
@@ -121,7 +121,7 @@ const Projectslideshow = () => {
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`h-2 rounded-full transition-all ${
-              index === currentIndex ? "w-8 bg-blue-500" : "w-2 bg-gray-300 hover:bg-gray-400"
+              index === currentIndex ? "w-8 bg-black" : "w-2 bg-gray-300 hover:bg-gray-400"
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />

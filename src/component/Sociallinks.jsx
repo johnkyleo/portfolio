@@ -8,7 +8,7 @@ import { RiGithubLine, RiLinkedinLine } from "react-icons/ri";
 
 const Sociallinks = () => {
   return (
-   <div className="md:col-span-3 lg:col-span-4 md:row-span-1 bg-card border border-border rounded-lg p-6 flex flex-col justify-between hover:border-accent transition-colors">
+   <div className="md:col-span-3 lg:col-span-4 md:row-span-1 bg-card border border-border rounded-lg p-6 flex flex-col justify-between hover:scale-[1.02]">
           <h3 className="text-sm font-medium text-muted-foreground mb-4">
             Connect
           </h3>

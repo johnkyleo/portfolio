@@ -25,10 +25,10 @@ export function Navigation() {
             JKO
           </a>
           <div className="flex items-center gap-8">
-            <a href="#projects" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+            <a href="#projects" className="text-sm text-gray-500 hover:text-black transition-colors">
               Projects
             </a>
-            <a href="#contact" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+            <a href="#contact" className="text-sm text-gray-500 hover:text-black transition-colors">
               Contact
             </a>
           </div>

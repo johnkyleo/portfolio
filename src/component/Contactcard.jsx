@@ -35,7 +35,7 @@ const Contactcard = () => {
   return (
     <div
       id="contact"
-      className="md:col-span-6 lg:col-span-12 md:row-span-1 bg-accent text-background border border-foreground rounded-lg p-8 flex flex-col md:flex-row items-center justify-between gap-4 hover:scale-[1.01] transition-transform"
+      className="md:col-span-6 lg:col-span-12 md:row-span-1 bg-white border border-foreground rounded-lg p-8 flex flex-col md:flex-row items-center justify-between gap-4 hover:scale-[1.02] transition-transform"
     >
       <div className={`${contactpage ? "hidden" : "block"}`}>
         <h2 className="text-2xl md:text-3xl font-bold mb-2">
@@ -47,7 +47,7 @@ const Contactcard = () => {
       </div>
       <button
         onClick={onClick}
-        className={`bg-background text-foreground px-6 py-3 rounded-md hover:bg-background/90 transition flex items-center text-md font-medium ${
+        className={`bg-background text-foreground px-6 py-3 rounded-md hover:bg-[#181818] hover:text-white transition flex items-center text-md font-medium ${
           contactpage ? "hidden" : "block"
         }`}
       >
@@ -61,7 +61,8 @@ const Contactcard = () => {
         }`}
       >
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-16 text-center">
+          
+          <h2 className="text-3xl sm:text-4xl font-bold mb-16 text-center text-black">
             Get In Touch
           </h2>
           <form className="space-y-6" onSubmit={onSubmit}>
@@ -70,14 +71,14 @@ const Contactcard = () => {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-bold text-gray-300 mb-2"
+                  className="block text-sm font-bold text-black mb-2"
                 >
                   Name
                 </label>
                 <input
                   type="text"
                   id="name"
-                  className="w-full px-4 py-3 bg-white/5 border border-white rounded-lg focus:outline-none focus:ring-2 focus:ring-white/30 text-white"
+                  className="w-full px-4 py-2  border border-[#181818] rounded-lg focus:outline-none focus:ring-2 focus:ring-white/30 text-black"
                   placeholder="Your Name"
                   name="name"
                   required
@@ -86,14 +87,14 @@ const Contactcard = () => {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-bold text-gray-300 mb-2"
+                  className="block text-sm font-bold text-black mb-2"
                 >
                   Email
                 </label>
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-4 py-3 bg-white/5 border border-white rounded-lg focus:outline-none focus:ring-2 focus:ring-white/30 text-white"
+                  className="w-full px-4 py-2  border border-[#181818] rounded-lg focus:outline-none focus:ring-2 focus:ring-white/30 text-black"
                   placeholder="your.email@example.com"
                   name="email"
                   required
@@ -103,14 +104,14 @@ const Contactcard = () => {
             <div>
               <label
                 htmlFor="subject"
-                className="block text-sm font-bold text-gray-300 mb-2"
+                className="block text-sm font-bold text-black mb-2"
               >
                 Subject
               </label>
               <input
                 type="text"
                 id="subject"
-                className="w-full px-4 py-3 bg-white/5 border border-white rounded-lg focus:outline-none focus:ring-2 focus:ring-white/30 text-white"
+                className="w-full px-4 py-2  border border-[#181818] rounded-lg focus:outline-none focus:ring-2 focus:ring-white/30 text-black"
                 placeholder="Subject"
                 name="subject"
               />
@@ -118,14 +119,14 @@ const Contactcard = () => {
             <div>
               <label
                 htmlFor="message"
-                className="block text-sm font-bold text-gray-300 mb-2"
+                className="block text-sm font-bold text-black mb-2"
               >
                 Message
               </label>
               <textarea
                 id="message"
                 rows={6}
-                className="w-full px-4 py-3 bg-white/5 border border-white rounded-lg focus:outline-none focus:ring-2 focus:ring-white/30 text-white resize-none"
+                className="w-full px-3 py-3 bg-white/5 border  rounded-lg focus:outline-none focus:ring-2 focus:ring-white/30 text-black resize-none"
                 placeholder="Your message..."
                 name="message"
                 required
@@ -133,10 +134,11 @@ const Contactcard = () => {
             </div>
             <button
               type="submit"
-              className="w-full py-4 px-6 bg-white text-black font-medium rounded-lg transition-all duration-300 transform hover:scale-[1.02] hover:bg-gray-200"
+              className="w-full py-3 px-6 border text-black font-medium rounded-lg transition-all duration-300 transform hover:scale-[1.02] hover:bg-[#181818] hover:text-white"
             >
               Send Message
             </button>
+            
           </form>
         </div>
       </section>
