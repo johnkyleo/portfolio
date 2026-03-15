@@ -7,7 +7,7 @@ import {
 
 const Skills = () => {
   return (
-    <div className="md:col-span-3 lg:col-span-4 md:row-span-2 bg-card border border-border rounded-lg p-6 hover:scale-[1.02] min-h-[280px]">
+    <div data-aos="fade-right" className="md:col-span-3 lg:col-span-4 md:row-span-2 bg-card border border-border rounded-lg p-6 hover:scale-[1.02] min-h-[280px]">
           <h3 className="text-sm font-medium text-muted-foreground mb-6">
             Skills
           </h3>

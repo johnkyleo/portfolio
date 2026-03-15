@@ -4,7 +4,7 @@ import {
 
 const Emailcard = () => {
   return (
-    <div className="md:col-span-3 lg:col-span-4 md:row-span-1 bg-[#181818] text-white border border-accent rounded-lg p-6 flex flex-col justify-between hover:scale-[1.02] transition-transform">
+    <div data-aos="fade-left" className="md:col-span-3 lg:col-span-4 md:row-span-1 bg-[#181818] text-white border border-accent rounded-lg p-6 flex flex-col justify-between hover:scale-[1.02] transition-transform">
           <Mail className="h-8 w-8 mb-4" />
           <div>
             <h3 className="text-sm font-medium mb-2 opacity-90">Email</h3>

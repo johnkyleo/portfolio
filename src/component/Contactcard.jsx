@@ -33,7 +33,7 @@ const Contactcard = () => {
   };
 
   return (
-    <div
+    <div data-aos="fade-up"
       id="contact"
       className="md:col-span-6 lg:col-span-12 md:row-span-1 bg-white border border-foreground rounded-lg p-8 flex flex-col md:flex-row items-center justify-between gap-4 hover:scale-[1.02] transition-transform"
     >

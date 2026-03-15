@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-   <div className="md:col-span-6 lg:col-span-8 md:row-span-2 bg-card border border-border rounded-lg p-8 flex flex-col justify-between hover:scale-[1.02] ">
+   <div data-aos="fade-up" className="md:col-span-6 lg:col-span-8 md:row-span-2 bg-card border border-border rounded-lg p-8 flex flex-col justify-between hover:scale-[1.02] ">
           <div>
             <h2 className="text-3xl font-bold mb-4">About Me</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">

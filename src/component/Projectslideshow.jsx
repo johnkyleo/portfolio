@@ -59,7 +59,7 @@ const Projectslideshow = () => {
   const currentProjects = projects.slice(currentIndex, currentIndex + slidesToShow)
 
   return (
-    <div className="relative bg-white border rounded-lg p-6 md:p-8 transition-colors min-h-[400px] flex flex-col hover:scale-[1.02]">
+    <div data-aos="fade-up" className="relative bg-white border rounded-lg p-6 md:p-8 transition-colors min-h-[400px] flex flex-col hover:scale-[1.02]">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-2xl font-bold text-black">Projects</h2>
         <div className="flex items-center gap-2">

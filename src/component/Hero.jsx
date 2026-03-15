@@ -2,7 +2,7 @@ import React from 'react'
 import { ArrowUpRight,} from "lucide-react";
 const Hero = () => {
   return (
-     <div className="md:col-span-6 lg:col-span-8 md:row-span-2 bg-card border border-border rounded-lg p-8 flex flex-col justify-between hover:scale-[1.02] lg:max-h-[450px] text-center sm:text-left">
+     <div data-aos="fade-down" className="md:col-span-6 lg:col-span-8 md:row-span-2 bg-card border border-border rounded-lg p-8 flex flex-col justify-between hover:scale-[1.02] lg:max-h-[450px] text-center sm:text-left">
           <div>
             <h1 className="text-5xl md:text-7xl font-bold mb-4 text-balance heroh1">
               John Kyle Obusan
